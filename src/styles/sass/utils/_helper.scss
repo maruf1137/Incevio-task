@@ -1,0 +1,145 @@
+// Colors Classes
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.bolder {
+  font-weight: 800 !important;
+}
+
+.semi-bold {
+  font-weight: 600 !important;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+  fill: $color-white;
+}
+
+.white {
+  color: $color-white !important;
+}
+.black {
+  color: $color-black !important;
+}
+.primary-color {
+  color: $color-primary !important;
+}
+.red {
+  color: $color-primary !important;
+}
+.orenge {
+  color: $color-primary !important;
+}
+
+// =================================
+// =================================
+
+.laptop-land-show {
+  display: none !important;
+  @media only screen and (max-width: $laptop-land) {
+    display: block !important;
+  }
+}
+.laptop-land-hide {
+  @media only screen and (max-width: $laptop-land) {
+    display: none;
+  }
+}
+.laptop-port-show {
+  display: none;
+
+  @media only screen and (max-width: $laptop-port) {
+    display: block;
+  }
+}
+.laptop-port-hide {
+  @media only screen and (max-width: $laptop-port) {
+    display: none;
+  }
+}
+.tablet-land-show {
+  display: none !important;
+
+  @media only screen and (max-width: $tab-land) {
+    display: block !important;
+  }
+}
+.tablet-land-hide {
+  @media only screen and (max-width: $tab-land) {
+    display: none !important;
+  }
+}
+.tablet-port-show {
+  display: none !important;
+
+  @media only screen and (max-width: $tab-port) {
+    display: block !important;
+  }
+}
+
+.tablet-port-hide {
+  @media only screen and (max-width: $tab-port) {
+    display: none !important;
+  }
+}
+
+.mbl-land-hide {
+  @media only screen and (max-width: $mbl-land) {
+    display: none !important;
+  }
+}
+.mbl-land-show {
+  display: none !important;
+
+  @media only screen and (max-width: $mbl-land) {
+    display: block !important;
+  }
+}
+
+.mbl-small-hide {
+  @media only screen and (max-width: $mbl-small) {
+    display: none !important;
+  }
+}
+.mbl-small-show {
+  display: none !important;
+
+  @media only screen and (max-width: $mbl-small) {
+    display: block !important;
+  }
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+// ======================================
+// buttons
+// ======================================
+
+.btn.btn-outline-primary {
+  border: 1px solid #5b5053 !important;
+  color: #2a2a2a !important;
+  border-radius: 8px;
+  font-size: 1.6rem;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+.btn__active {
+  justify-content: center;
+  align-items: center;
+  padding: 12px 48px;
+  background: linear-gradient(89.9deg, #8e54e9 2.01%, #3867d8 98.89%);
+  border-radius: 8px;
+  font-size: 1.6rem !important;
+
+  &:hover {
+    color: #fff !important;
+  }
+}

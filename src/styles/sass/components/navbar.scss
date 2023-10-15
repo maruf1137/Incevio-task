@@ -1,0 +1,207 @@
+/* -------------------------
+2. header-top
+---------------------------- */
+$header-bg: #fe4847;
+$menu-link-color: #fff;
+$menu-hover-color: #fe4847;
+$menu-dropdown-bg: #fff;
+$menu-dropdown-shadow: rgba(86, 86, 90, 0.5);
+$menu-dropdown-text-color: #666;
+$menu-dropdown-hover-color: #fff;
+$menu-dropdown-hover-bg: #fe4847;
+$menu-dropdown-submenu-bg: #ebebeb;
+$menu-dropdown-submenu-border: 1px solid #ebebeb;
+$menu-font-family: "Raleway", sans-serif;
+$menu-font-size: 13px;
+$menu-font-weight: 700;
+$menu-submenu-font-family: "Lato", sans-serif;
+$menu-submenu-font-size: 11px;
+$menu-submenu-font-weight: 700;
+$menu-padding: 35px 0;
+$menu-submenu-padding: 12px 15px;
+$menu-transition: all 0.3s ease 0s;
+
+.header-bottom-area {
+  background: $header-bg;
+}
+
+.autosuggest-search-box {
+  input,
+  input:focus {
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 transparent;
+  }
+
+  #react-autowhatever-1 {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    color: #000;
+    z-index: 10;
+    // border: 1px solid #5f5f5f81;
+
+    li {
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $menu-hover-color;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.main-menu {
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 17px;
+      position: relative;
+      a {
+        color: $menu-link-color;
+        display: block;
+        font-family: $menu-font-family;
+        font-size: $menu-font-size;
+        font-weight: $menu-font-weight;
+        padding: 0px 0 10px 0;
+        text-transform: uppercase;
+      }
+      &:hover {
+        a {
+          color: #fff;
+        }
+      }
+      ul {
+        background: $menu-dropdown-bg;
+        box-shadow: 0 1px 2px $menu-dropdown-shadow;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 130%;
+        transition: $menu-transition;
+        visibility: hidden;
+        max-width: 250px;
+        width: 100%;
+        z-index: 999999;
+        li {
+          border-bottom: $menu-dropdown-submenu-border;
+          display: block;
+          margin: 0;
+          text-align: left;
+          &:last-child {
+            border: 0;
+          }
+          a {
+            color: $menu-dropdown-text-color;
+            display: block;
+            font-family: $menu-submenu-font-family;
+            font-size: $menu-submenu-font-size;
+            font-weight: $menu-submenu-font-weight;
+            padding: $menu-submenu-padding;
+            position: relative;
+            text-transform: uppercase;
+            &:hover {
+              color: $menu-dropdown-hover-color;
+              background: $menu-dropdown-hover-bg;
+            }
+          }
+        }
+        &:hover {
+          opacity: 1;
+          top: 100%;
+          visibility: visible;
+        }
+      }
+    }
+    .static {
+      position: static;
+    }
+  }
+}
+
+.inner-container {
+  position: relative;
+}
+
+.main-menu {
+  ul {
+    li {
+      .mega-menu,
+      .mega-menu-2 {
+        background-color: $menu-dropdown-bg;
+        left: 0;
+        margin: 0;
+        opacity: 0;
+        padding: 20px 30px;
+        position: absolute;
+        text-align: left;
+        top: 130%;
+        transition: $menu-transition;
+        visibility: hidden;
+        width: 100%;
+        z-index: 9999;
+      }
+      .mega-menu-2 {
+        left: -500px;
+        width: 923px;
+      }
+      &:hover {
+        .mega-menu {
+          opacity: 1;
+          visibility: visible;
+          top: 100%;
+        }
+      }
+      .mega-menu {
+        span {
+          float: left;
+          padding-right: 30px;
+          width: 24.6%;
+          a.mega-title {
+            border-bottom: 1px solid #ccc;
+            color: #000;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+          a {
+            color: #444;
+            display: block;
+            font-weight: 400;
+            padding: 8px 0;
+            text-transform: capitalize;
+            &:hover {
+              color: $menu-hover-color;
+            }
+          }
+          &.mega-menu-img {
+            padding-right: 0;
+            width: 26%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// sidebar
+.mbl-navbar {
+  button {
+    text-align: left !important;
+    padding-left: 20px;
+  }
+
+  li {
+    ul {
+      padding-left: 10px;
+    }
+
+    span {
+      font-weight: 500;
+    }
+  }
+}

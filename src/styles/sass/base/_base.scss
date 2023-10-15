@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // list-style: none;
+  text-decoration: none;
+  outline: none;
+  // text-transform: capitalize;
+}
+// ::selection {
+// 	background: $color-text;
+// 	color: #fff;
+// }
+
+html {
+  // font-size: 62.5%;
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+
+  // @media only screen and (max-width: $laptop-land) {
+  //   font-size: 55%;
+  // }
+  // @media only screen and (max-width: $laptop-port) {
+  //   font-size: 50%;
+  // }
+}
+
+body {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $color-black;
+  overflow-x: hidden;
+  background-color: $color-white;
+}
+
+.swiper-slide-thumb-active .progress {
+  transition-duration: 5s;
+  transition-property: width;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: linear;
+  width: 100%;
+}
