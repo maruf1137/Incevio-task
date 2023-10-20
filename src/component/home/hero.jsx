@@ -21,10 +21,10 @@ const Hero = () => {
         thumbs={{
           swiper: activeThumb && !activeThumb.destroyed ? activeThumb : null,
         }}
-        // autoplay={{
-        //   delay: 5000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
         className="full-slider h-full overflow-visible">
         {hero_swiper_data.map((item) => {
           const { image, id } = item;
